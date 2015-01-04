@@ -19,4 +19,4 @@
   
 </head>
 <body>
-<div class="app app-header-fixed  ">
+<div class="app app-header-fixed app-aside-fixed">

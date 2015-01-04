@@ -20,7 +20,6 @@ get('emails/sent', 'EmailsController@sent');
 get('emails/drafts', 'EmailsController@drafts');
 get('emails/trash', 'EmailsController@trash');
 
-
 /* SUPPORT ROUTES */
 get('support/my-tickets', 'SupportController@myTickets');
 get('support/tickets', 'SupportController@tickets');
@@ -41,7 +40,6 @@ $router->resource('leads', 'LeadsController');
 $router->resource('contacts', 'ContactsController');
 $router->resource('support', 'SupportController', ['except' => ['destroy'] ]);
 $router->resource('emails', 'EmailsController', ['except' => ['edit'] ]);
-
 
 /* CONTROLLER ROUTES */
 $router->controllers([
