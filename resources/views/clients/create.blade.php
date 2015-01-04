@@ -114,7 +114,7 @@
 		          		<div class="col-sm-6">
 				          	<div class="form-group">
 					          	<label for="client">Contact First Name <span class="text-danger">*</span></label>
-					          	{!! Form::text('contact_first_name', null, ['class' => 'form-control', 'placeholder' => 'eg. Bob', 'required']) !!}
+					          	{!! Form::text('contact_first_name', null, ['class' => 'form-control', 'placeholder' => 'eg. Robert', 'required']) !!}
 				          	</div>
 			          	</div>
 
@@ -132,7 +132,7 @@
 			          	<div class="col-sm-6">
 				          	<div class="form-group">
 					          	<label for="client">Contact Email Address <span class="text-danger">*</span></label>
-					          	{!! Form::email('contact_email', null, ['class' => 'form-control', 'placeholder' => 'eg. bob@backyardbeetroot.com', 'required']) !!}
+					          	{!! Form::email('contact_email', null, ['class' => 'form-control', 'placeholder' => 'eg. bob@bobsbackyardbeetroot.com', 'required']) !!}
 				          	</div>
 			          	</div>
 		          		<div class="col-sm-6">
@@ -148,13 +148,13 @@
 		          	<div class="row">
 		          		<div class="col-sm-6">
 				          	<div class="form-group">
-					          	<label for="client">Primary Phone <span class="text-danger">*</span></label>
+					          	<label for="client">Primary Phone (Mobile) <span class="text-danger">*</span></label>
 					          	{!! Form::text('contact_primary_phone', null, ['class' => 'form-control', 'placeholder' => 'eg. +61.423 650 187',]) !!}
 				          	</div>
 				        </div>
 				     	<div class="col-sm-6">
 				          	<div class="form-group">
-					          	<label for="client">Secondary Phone</label>
+					          	<label for="client">Secondary Phone (Landline)</label>
 					          	{!! Form::text('contact_secondary_phone', null, ['class' => 'form-control', 'placeholder' => 'eg. +61.323 650 187', 'required']) !!}
 				          	</div>
 				        </div>
