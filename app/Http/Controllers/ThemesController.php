@@ -26,7 +26,7 @@ class ThemesController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return 'New themes can be added here. Themes must be compiled before they can be added however. Some thought needs to be had here in order to come up with the best solution for integrating themes into the CRM whilst also being able to hand the client their website code, should they decide to cancel their services.';
 	}
 
 	/**

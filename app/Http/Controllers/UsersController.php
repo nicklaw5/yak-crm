@@ -12,7 +12,7 @@ class UsersController extends Controller {
 	 */
 	public function index()
 	{
-		return 'list users here';
+		return 'This page will display a list of all users registered in the CRM. It will also provide links to each user for editing purposes.';
 	}
 
 	/**
@@ -22,7 +22,7 @@ class UsersController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return 'New users can be created here. When creating users, they can be added as contacts (or members) of clients.';
 	}
 
 	/**

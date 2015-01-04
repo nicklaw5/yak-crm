@@ -12,7 +12,7 @@ class LeadsController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		return 'New leads that come in from the website\'s "Contact Us" form can be followed up on from here.';
 	}
 
 	/**

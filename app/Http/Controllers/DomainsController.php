@@ -12,7 +12,7 @@ class DomainsController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		return 'This page will list all domains registered through the organization.';
 	}
 
 	/**
@@ -22,7 +22,7 @@ class DomainsController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return 'New domains can be purchased from this page.';
 	}
 
 	/**
@@ -77,6 +77,16 @@ class DomainsController extends Controller {
 	public function destroy($id)
 	{
 		//
+	}
+
+	/**
+	 * Store a newly created resource in storage.
+	 *
+	 * @return Response
+	 */
+	public function dns()
+	{
+		return 'DNS configurations for each domain will be able to be altered here.';
 	}
 
 }

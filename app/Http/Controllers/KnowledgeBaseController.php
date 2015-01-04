@@ -12,7 +12,7 @@ class KnowledgeBaseController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		return 'The knowledge base will provide support documentation to clients. These support articles will be clear, concise, and collaborative. They will mainly cover FAQs and industry best practices. Videos will highly beneficial in most circumstances here too.';
 	}
 
 	/**

@@ -111,6 +111,7 @@
 		      </div>
 
 		      <div class="form-group">
+		      	<label class="font-bold">Attachments:</label>
 		      	{!! Form::file('Attachments', ['class' => 'btn btn-md btn-primary', 'multiple']) !!}
 		      </div>
 

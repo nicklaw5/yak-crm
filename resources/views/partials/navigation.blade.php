@@ -363,7 +363,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="{{ action('DomainsController@update') }}">
+                  <a href="{{ action('DomainsController@dns') }}">
                     <span>DNS Tools</span>
                   </a>
                 </li>

@@ -12,7 +12,7 @@ class ProjectsController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		return 'This page will display any ongoing projects. Projects will primarily be made of client website builds, but may also include compiling a new theme/template.';
 	}
 
 	/**
@@ -22,7 +22,7 @@ class ProjectsController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return 'New projects can be created here. When creating a project, it must be assigned to both a project manager and a client.';
 	}
 
 	/**

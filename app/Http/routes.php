@@ -25,6 +25,9 @@ get('emails/trash', 'EmailsController@trash');
 get('support/my-tickets', 'SupportController@myTickets');
 get('support/tickets', 'SupportController@tickets');
 
+/* DOMAIN ROUTES */
+get('domains/dns', 'DomainsController@dns');
+
 /* ROUTE RESOURCES */
 $router->resource('projects', 'ProjectsController');
 $router->resource('users', 'UsersController');

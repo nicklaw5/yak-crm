@@ -3,7 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class DocumentsBaseController extends Controller {
+class DocumentsController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -12,7 +12,7 @@ class DocumentsBaseController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		return 'The documents page will be linked with Google Drive, which will contain documentation on common procedures (ie. website builds). These will prove beneficial should new employees come onboard.';
 	}
 
 	/**

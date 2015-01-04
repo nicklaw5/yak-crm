@@ -12,7 +12,7 @@ class ContactsController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		return 'Here we will store and display contact details. This be primary used for keeping in touch with other industry connections (ie. developer, marketers, designers, etc.). Clients details will not be added here.';
 	}
 
 	/**
@@ -22,7 +22,7 @@ class ContactsController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return 'Add new contacts here (eg. name, phone, email, etc.).';
 	}
 
 	/**

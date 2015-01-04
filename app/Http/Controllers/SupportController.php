@@ -75,7 +75,7 @@ class SupportController extends Controller {
 	 */
 	public function myTickets()
 	{
-		//
+		return 'Staff can manage the tickets they own here.';
 	}
 
 	/**
@@ -85,6 +85,6 @@ class SupportController extends Controller {
 	 */
 	public function tickets()
 	{
-		//
+		return 'All open/unclaimed support ticket will live here.';
 	}
 }
