@@ -31,23 +31,26 @@
 	$(document).ready(function(){
 		$('.disable-edit').click(function(evt) {
 			evt.preventDefault();
-
-			//alert( CKEDITOR.instances.editor1 ); // e.g. object
-			CKEDITOR.instances.editor1.destroy();
-			//alert( CKEDITOR.instances.editor1 ); // undefined	    
-			alert('Editor Disabled!');
+			if (CKEDITOR.instances.editor1) {
+				$('#editor1').attr('contenteditable', 'false');
+				CKEDITOR.instances.editor1.destroy();
+				alert('Editor Disabled!');
+			}
 		});
 		$('.enable-edit').click(function(evt) {
 			evt.preventDefault();
-			// // Turn off automatic editor creation first.
-		    //CKEDITOR.disableAutoInline = true;
-		    CKEDITOR.inline( 'editor1' );
-		    alert('Editor Enabled!');
+			if (!CKEDITOR.instances.editor1) {
+				$('#editor1').attr('contenteditable', 'true');
+			    CKEDITOR.inline( 'editor1' );
+			    alert('Editor Enabled!');
+			} else {
+				alert('You are already editing');
+			}
 		});
 
 		$('.save-edit').click(function(evt) {
 			evt.preventDefault();
-		    alert('Changes Saved!');
+		    alert('Changes Saved! (NOTE: This doesn\'t work just yet :P )');
 		});
 	});
 </script>
