@@ -165,6 +165,35 @@
 		          		<p><span class="font-bold text-upper">note:</span> Additonal contacts can be added once the client has been created.</p>
 		          	</div>
 
+		          	<h3>Google Apps</h3>
+		          	<div class="form-group">
+		          		Will this client require a Google Apps account?
+		          		<a data-toggle="tooltip" data-placement="top" title="If the client needs to create new email accounts, we will need to configure a new Google Apps account.">
+			          		<i class="fa fa-question-circle"></i>
+			          	</a>
+		          		<div class="radio">
+			              <label class="i-checks">
+			                <input type="radio" name="gapps" value="0" checked />
+			                <i></i>
+			                No Google Apps account is required.
+			              </label>
+			            </div>
+			            <div class="radio">
+			              <label class="i-checks">
+			                <input type="radio" name="gapps" value="1" />
+			                <i></i>
+			                The client already has a Google Apps account.
+			              </label>
+			            </div>
+			            <div class="radio">
+			              <label class="i-checks">
+			                <input type="radio" name="gapps" value="2" />
+			                <i></i>
+			                Yes, we will need to configure a new Google Apps account.
+			              </label>
+			            </div>
+			        </div>
+
 	          	</div>
 	          	<!-- contact details -->
 

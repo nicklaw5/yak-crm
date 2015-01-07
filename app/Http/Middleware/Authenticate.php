@@ -40,8 +40,12 @@ class Authenticate implements Middleware {
 				return response('Unauthorized.', 401);
 			}
 			else
-			{
-				return redirect()->guest('auth/login');
+			{	
+				// return view('auth/signin',
+				// 	[
+				// 		'title' => 'Sign in'
+				// 	]);
+				return redirect()->guest('auth/signin');
 			}
 		}
 

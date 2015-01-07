@@ -17,4 +17,12 @@ class MainController extends Controller {
 				'title' => 'Dashboard'
 			]);
 	}
+
+	public function test()
+	{
+		return view('main.test', 
+			[
+				'title' => 'Inline Test'
+			]);
+	}
 }

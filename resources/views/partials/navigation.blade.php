@@ -490,6 +490,14 @@
               </a>
             </li>
 
+            <!-- EDITING TESTS NAV -->
+            <li>
+              <a href="{{ action('MainController@test') }}" class="auto">
+                <i class="fa fa-paperclip icon"></i>
+                <span class="font-bold">Editing Tests</span>
+              </a>
+            </li>
+
         </nav>
         <!-- nav -->
 

@@ -26,5 +26,30 @@
 <script src="{{ asset('js/wysiwyg/jquery.hotkeys.js') }}"></script>
 <script src="{{ asset('js/onload.js') }}"></script>
 
+<script src="//cdn.ckeditor.com/4.4.6/full/ckeditor.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.disable-edit').click(function(evt) {
+			evt.preventDefault();
+
+			//alert( CKEDITOR.instances.editor1 ); // e.g. object
+			CKEDITOR.instances.editor1.destroy();
+			//alert( CKEDITOR.instances.editor1 ); // undefined	    
+			alert('Editor Disabled!');
+		});
+		$('.enable-edit').click(function(evt) {
+			evt.preventDefault();
+			// // Turn off automatic editor creation first.
+		    //CKEDITOR.disableAutoInline = true;
+		    CKEDITOR.inline( 'editor1' );
+		    alert('Editor Enabled!');
+		});
+
+		$('.save-edit').click(function(evt) {
+			evt.preventDefault();
+		    alert('Changes Saved!');
+		});
+	});
+</script>
 </body>
 </html>

@@ -12,7 +12,11 @@ class ProjectsController extends Controller {
 	 */
 	public function index()
 	{
-		return 'This page will display any ongoing projects. Projects will primarily be made of client website builds, but may also include compiling a new theme/template.';
+		return view('projects.index',
+			[
+				'title' => 'Projects'
+			]);
+		//return 'This page will display any ongoing projects. Projects will primarily be made of client website builds, but may also include compiling a new theme/template.';
 	}
 
 	/**

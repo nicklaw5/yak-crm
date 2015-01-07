@@ -36,31 +36,37 @@
 								'john@doe.comjohn@doe.com' => 'John Doe <john@doe.com>',
 								'jane@doe.com' => 'Jane Doe <jane@doe.com>'
 		        			],
-		        			null, ['class' => 'form-control chosen-selected', 'ui-jq' => 'chosen', 'data-placeholder' => 'Select recipients...', 'multiple', 'required']); !!}
+		        			null, ['class' => 'form-control chosen-selected', 'ui-jq' => 'chosen', 'data-placeholder' => 'Select recipients...', 'multiple', 'required']) !!}
               	</div>
             	
-              	<div class="form-group">
-		        	<label class="font-bold">Cc:</label>
-		        	{!! Form::select('cc[]', 
-		        			[
-								'nick_law@tpg.com.au' => 'Nicholas Law <nick_law@tpg.com.au>',
-								'bob@bobsbackyardbeetroot.com' => 'Bob Butcher <bob@bobsbackyardbeetroot.com>',
-								'john@doe.comjohn@doe.com' => 'John Doe <john@doe.com>',
-								'jane@doe.com' => 'Jane Doe <jane@doe.com>'
-		        			],
-		        			null, ['class' => 'form-control chosen-selected', 'ui-jq' => 'chosen', 'data-placeholder' => 'Select recipients...', 'multiple', 'required']); !!}
-              	</div>
+            	<div class="row">
+	            	<div class="col-sm-6">
+		              	<div class="form-group">
+				        	<label class="font-bold">Cc:</label>
+				        	{!! Form::select('cc[]', 
+				        			[
+										'nick_law@tpg.com.au' => 'Nicholas Law <nick_law@tpg.com.au>',
+										'bob@bobsbackyardbeetroot.com' => 'Bob Butcher <bob@bobsbackyardbeetroot.com>',
+										'john@doe.comjohn@doe.com' => 'John Doe <john@doe.com>',
+										'jane@doe.com' => 'Jane Doe <jane@doe.com>'
+				        			],
+				        			null, ['class' => 'form-control chosen-selected', 'ui-jq' => 'chosen', 'data-placeholder' => 'Select recipients...', 'multiple', 'required']) !!}
+		              	</div>
+	              	</div>
 
-              	<div class="form-group">
-		        	<label class="font-bold">Bcc:</label>
-		        	{!! Form::select('bcc[]', 
-		        			[
-								'nick_law@tpg.com.au' => 'Nicholas Law <nick_law@tpg.com.au>',
-								'bob@bobsbackyardbeetroot.com' => 'Bob Butcher <bob@bobsbackyardbeetroot.com>',
-								'john@doe.comjohn@doe.com' => 'John Doe <john@doe.com>',
-								'jane@doe.com' => 'Jane Doe <jane@doe.com>'
-		        			],
-		        			null, ['class' => 'form-control chosen-selected', 'ui-jq' => 'chosen', 'data-placeholder' => 'Select recipients...', 'multiple', 'required']); !!}
+	              	<div class="col-sm-6">
+              			<div class="form-group">
+				        	<label class="font-bold">Bcc:</label>
+				        	{!! Form::select('bcc[]', 
+				        			[
+										'nick_law@tpg.com.au' => 'Nicholas Law <nick_law@tpg.com.au>',
+										'bob@bobsbackyardbeetroot.com' => 'Bob Butcher <bob@bobsbackyardbeetroot.com>',
+										'john@doe.comjohn@doe.com' => 'John Doe <john@doe.com>',
+										'jane@doe.com' => 'Jane Doe <jane@doe.com>'
+				        			],
+				        			null, ['class' => 'form-control chosen-selected', 'ui-jq' => 'chosen', 'data-placeholder' => 'Select recipients...', 'multiple', 'required']) !!}
+		              	</div>
+		            </div>
               	</div>
 
               	<div class="form-group">
@@ -111,12 +117,12 @@
 		      </div>
 
 		      <div class="form-group">
-		      	<label class="font-bold">Attachments:</label>
+		      	<label class="font-bold">Attachments</label>
 		      	{!! Form::file('Attachments', ['class' => 'btn btn-md btn-primary', 'multiple']) !!}
 		      </div>
 
 		      <div class="form-group">
-		      	{!! Form::submit('Send', ['class' => 'btn btn-md btn-primary']) !!}
+		      	{!! Form::submit('Send', ['class' => 'btn btn-lg btn-primary']) !!}
 		      </div>
 
             </div>
