@@ -18,8 +18,10 @@
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
-	<button class="btn btn-info enable-edit">Enable Editing</button>
-	<button class="btn btn-danger disable-edit">Disable Editing</button>
-	<button class="btn btn-success save-edit">Save Changes</button>
+	<div style="margin-top: 120px;">
+		<button class="btn btn-info enable-edit">Enable Editing</button>
+		<button class="btn btn-danger disable-edit">Disable Editing</button>
+		<button class="btn btn-success save-edit">Save Changes</button>
+	</div>
 </div>
 @stop
