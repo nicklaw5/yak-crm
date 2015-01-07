@@ -3,8 +3,8 @@
 <div class="col-lg-6">
 	<h4 class="text-danger">Click anywhere in the below text to begin editing <i class="fa fa-smile-o"></i></h4>
 	<div id="editor1" contenteditable="true">
-		<h1>This is a editable title</h1>
-		<p><img src="{{ asset('img/a0.jpg') }}"></p>
+		<h1>This is an editable title</h1>
+		<p><img style="float:left; margin:10px" src="{{ asset('img/a0.jpg') }}"></p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
